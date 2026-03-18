@@ -1,0 +1,24 @@
+# Normalize line endings automatically
+* text=auto
+
+# Force LF for code files (important for Node.js)
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+
+# Windows-specific files (keep CRLF)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files (don’t touch them)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Prevent Git from messing with CSV uploads
+*.csv text eol=lf

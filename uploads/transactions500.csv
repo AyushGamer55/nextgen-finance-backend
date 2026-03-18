@@ -1,0 +1,501 @@
+amount,type,category,account,description,date,tags
+2994,income,salary,checking,Salary,2024-02-24,salary;salary
+3428,income,salary,wallet,Salary,2024-01-25,monthly;payroll
+3409,expense,rent,savings,Spending on rent,2024-05-20,recurring;recurring
+502,expense,transport,checking,Spending on transport,2024-03-26,transport;transport
+4571,income,salary,savings,Salary,2024-01-30,monthly;payroll
+2053,income,salary,wallet,Salary,2024-10-27,monthly;payroll
+3949,expense,food,credit_card,Spending on food,2024-12-24,weekly;food
+2219,expense,shopping,checking,Spending on shopping,2024-09-28,weekly;recurring
+2169,expense,rent,wallet,Spending on rent,2024-12-15,weekly;weekly
+9664,income,salary,credit_card,Salary,2024-11-22,monthly;payroll
+3102,expense,transport,wallet,Spending on transport,2024-07-07,weekly;budget
+2325,expense,utilities,wallet,Spending on utilities,2024-03-17,recurring;budget
+4190,expense,entertainment,savings,Spending on entertainment,2024-06-28,budget;weekly
+7438,income,salary,credit_card,Salary,2024-03-07,monthly;monthly
+164,expense,entertainment,savings,Spending on entertainment,2024-04-08,entertainment;essentials
+1436,expense,transport,checking,Spending on transport,2024-09-10,weekly;weekly
+977,expense,transport,checking,Spending on transport,2024-03-30,essentials;essentials
+2663,expense,transport,savings,Spending on transport,2024-02-07,transport;budget
+449,expense,food,checking,Spending on food,2024-06-05,food;food
+126,expense,utilities,credit_card,Spending on utilities,2024-06-16,recurring;budget
+2155,expense,shopping,checking,Spending on shopping,2024-08-22,shopping;budget
+3097,expense,shopping,wallet,Spending on shopping,2024-07-15,essentials;shopping
+7362,income,salary,savings,Salary,2024-12-30,salary;monthly
+2010,expense,entertainment,savings,Spending on entertainment,2024-06-05,essentials;budget
+220,expense,food,checking,Spending on food,2024-02-18,essentials;recurring
+1393,expense,rent,savings,Spending on rent,2024-11-05,weekly;essentials
+693,expense,entertainment,credit_card,Spending on entertainment,2024-10-26,recurring;recurring
+1768,expense,entertainment,savings,Spending on entertainment,2024-08-14,budget;entertainment
+4689,expense,utilities,checking,Spending on utilities,2024-06-27,utilities;budget
+3414,expense,entertainment,savings,Spending on entertainment,2024-03-23,recurring;weekly
+441,expense,shopping,savings,Spending on shopping,2024-01-11,recurring;shopping
+3549,expense,transport,wallet,Spending on transport,2024-11-07,budget;recurring
+3696,expense,entertainment,wallet,Spending on entertainment,2024-04-28,entertainment;entertainment
+8177,income,salary,checking,Salary,2024-06-29,payroll;monthly
+5378,income,salary,checking,Salary,2024-03-10,payroll;payroll
+707,expense,utilities,wallet,Spending on utilities,2024-03-18,budget;budget
+4914,expense,food,checking,Spending on food,2024-05-20,essentials;essentials
+4170,expense,shopping,wallet,Spending on shopping,2024-09-28,essentials;weekly
+1703,expense,rent,savings,Spending on rent,2024-12-22,budget;weekly
+2531,expense,rent,savings,Spending on rent,2024-12-25,rent;weekly
+438,expense,shopping,savings,Spending on shopping,2024-03-15,weekly;weekly
+4929,expense,entertainment,checking,Spending on entertainment,2024-10-27,essentials;recurring
+2360,income,salary,credit_card,Salary,2024-11-26,payroll;payroll
+4470,expense,shopping,checking,Spending on shopping,2024-02-14,essentials;shopping
+3573,expense,entertainment,wallet,Spending on entertainment,2024-05-29,weekly;weekly
+2380,expense,food,checking,Spending on food,2024-12-13,recurring;essentials
+294,expense,food,wallet,Spending on food,2024-10-08,essentials;essentials
+8283,income,salary,checking,Salary,2024-12-24,salary;salary
+2552,income,salary,checking,Salary,2024-03-13,monthly;monthly
+1851,expense,entertainment,savings,Spending on entertainment,2024-10-11,recurring;weekly
+350,expense,rent,savings,Spending on rent,2024-02-11,rent;recurring
+4535,expense,entertainment,checking,Spending on entertainment,2024-12-17,weekly;essentials
+1406,expense,food,savings,Spending on food,2024-04-17,food;essentials
+4370,expense,entertainment,checking,Spending on entertainment,2024-06-20,recurring;weekly
+2511,expense,utilities,savings,Spending on utilities,2024-03-01,weekly;essentials
+2443,expense,rent,wallet,Spending on rent,2024-12-04,rent;rent
+3880,expense,food,checking,Spending on food,2024-07-31,weekly;food
+4591,expense,entertainment,credit_card,Spending on entertainment,2024-02-10,essentials;recurring
+1733,expense,utilities,checking,Spending on utilities,2024-04-07,budget;budget
+2502,expense,transport,credit_card,Spending on transport,2024-02-18,essentials;transport
+2100,income,salary,credit_card,Salary,2024-02-25,monthly;salary
+457,expense,transport,savings,Spending on transport,2024-01-02,budget;weekly
+2819,expense,food,wallet,Spending on food,2024-01-13,budget;essentials
+4353,expense,rent,credit_card,Spending on rent,2024-12-09,weekly;weekly
+2916,expense,utilities,checking,Spending on utilities,2024-08-10,essentials;recurring
+4849,expense,transport,credit_card,Spending on transport,2024-09-30,transport;transport
+4159,expense,utilities,wallet,Spending on utilities,2024-08-05,recurring;weekly
+3436,income,salary,checking,Salary,2024-09-13,payroll;payroll
+4539,expense,utilities,credit_card,Spending on utilities,2024-05-25,utilities;weekly
+9210,income,salary,credit_card,Salary,2024-12-26,monthly;salary
+3028,expense,entertainment,credit_card,Spending on entertainment,2024-11-08,entertainment;weekly
+4460,expense,shopping,wallet,Spending on shopping,2024-12-01,recurring;weekly
+4945,expense,transport,credit_card,Spending on transport,2024-05-28,recurring;weekly
+587,expense,rent,credit_card,Spending on rent,2024-08-01,essentials;budget
+4075,income,salary,savings,Salary,2024-02-21,monthly;monthly
+3505,expense,utilities,savings,Spending on utilities,2024-08-23,essentials;recurring
+3894,expense,entertainment,checking,Spending on entertainment,2024-04-11,recurring;essentials
+3693,expense,utilities,credit_card,Spending on utilities,2024-07-30,essentials;weekly
+2846,expense,transport,checking,Spending on transport,2024-11-07,weekly;recurring
+641,expense,rent,savings,Spending on rent,2024-04-15,recurring;essentials
+4670,income,salary,checking,Salary,2024-05-08,monthly;salary
+1482,income,salary,savings,Salary,2024-07-11,payroll;payroll
+485,expense,utilities,wallet,Spending on utilities,2024-06-22,recurring;utilities
+2126,expense,rent,wallet,Spending on rent,2024-10-07,weekly;weekly
+417,expense,transport,checking,Spending on transport,2024-12-11,essentials;transport
+3999,expense,rent,savings,Spending on rent,2024-06-10,essentials;rent
+2779,expense,transport,checking,Spending on transport,2024-06-03,essentials;budget
+2792,expense,food,wallet,Spending on food,2024-04-20,essentials;essentials
+2234,income,salary,savings,Salary,2024-03-04,monthly;payroll
+2276,expense,shopping,savings,Spending on shopping,2024-05-16,recurring;shopping
+431,expense,transport,checking,Spending on transport,2024-05-23,recurring;budget
+301,expense,rent,wallet,Spending on rent,2024-12-30,budget;rent
+637,expense,transport,savings,Spending on transport,2024-01-22,essentials;recurring
+9503,income,salary,wallet,Salary,2024-05-31,payroll;salary
+1076,expense,utilities,savings,Spending on utilities,2024-10-19,essentials;weekly
+4170,expense,shopping,credit_card,Spending on shopping,2024-11-13,recurring;shopping
+1314,expense,entertainment,savings,Spending on entertainment,2024-05-14,weekly;essentials
+8060,income,salary,credit_card,Salary,2024-09-13,salary;payroll
+1000,income,salary,wallet,Salary,2024-07-16,monthly;payroll
+4558,expense,food,wallet,Spending on food,2024-05-18,essentials;budget
+3953,expense,shopping,checking,Spending on shopping,2024-04-18,weekly;essentials
+3959,expense,entertainment,savings,Spending on entertainment,2024-09-09,recurring;recurring
+5655,income,salary,savings,Salary,2024-05-09,monthly;salary
+3601,expense,transport,savings,Spending on transport,2024-07-02,recurring;essentials
+9334,income,salary,credit_card,Salary,2024-01-10,salary;monthly
+1693,expense,rent,wallet,Spending on rent,2024-05-09,rent;rent
+1982,expense,entertainment,wallet,Spending on entertainment,2024-06-08,recurring;recurring
+2832,expense,utilities,savings,Spending on utilities,2024-05-25,essentials;budget
+2652,expense,entertainment,checking,Spending on entertainment,2024-05-29,budget;weekly
+382,expense,entertainment,checking,Spending on entertainment,2024-02-22,weekly;entertainment
+3149,expense,entertainment,wallet,Spending on entertainment,2024-10-12,entertainment;entertainment
+3532,expense,food,checking,Spending on food,2024-02-04,weekly;essentials
+4386,income,salary,credit_card,Salary,2024-12-09,monthly;monthly
+7228,income,salary,credit_card,Salary,2024-08-03,salary;payroll
+3818,expense,entertainment,checking,Spending on entertainment,2024-06-16,essentials;recurring
+1753,expense,utilities,credit_card,Spending on utilities,2024-12-18,budget;essentials
+3142,expense,utilities,checking,Spending on utilities,2024-03-05,budget;budget
+9596,income,salary,credit_card,Salary,2024-04-03,payroll;salary
+3134,expense,food,wallet,Spending on food,2024-04-14,food;food
+2858,expense,transport,credit_card,Spending on transport,2024-06-07,weekly;essentials
+342,expense,transport,savings,Spending on transport,2024-09-05,transport;recurring
+2615,income,salary,credit_card,Salary,2024-04-23,payroll;salary
+853,expense,transport,checking,Spending on transport,2024-01-29,weekly;recurring
+4158,expense,shopping,wallet,Spending on shopping,2024-08-31,weekly;budget
+3545,expense,shopping,credit_card,Spending on shopping,2024-01-24,recurring;essentials
+4917,expense,food,credit_card,Spending on food,2024-11-04,weekly;recurring
+6804,income,salary,credit_card,Salary,2024-08-30,monthly;payroll
+8767,income,salary,checking,Salary,2024-04-03,monthly;payroll
+3027,expense,food,credit_card,Spending on food,2024-01-25,budget;budget
+4790,expense,rent,savings,Spending on rent,2024-07-27,essentials;budget
+4937,expense,utilities,credit_card,Spending on utilities,2024-09-02,recurring;recurring
+2454,expense,transport,checking,Spending on transport,2024-08-12,budget;recurring
+1906,expense,entertainment,savings,Spending on entertainment,2024-12-28,essentials;weekly
+1918,income,salary,checking,Salary,2024-07-18,payroll;payroll
+1446,expense,transport,wallet,Spending on transport,2024-01-25,budget;transport
+3088,expense,transport,checking,Spending on transport,2024-04-25,weekly;essentials
+3208,expense,shopping,wallet,Spending on shopping,2024-02-09,weekly;recurring
+3185,expense,shopping,savings,Spending on shopping,2024-10-14,essentials;budget
+1023,expense,food,wallet,Spending on food,2024-11-28,food;recurring
+3160,expense,entertainment,wallet,Spending on entertainment,2024-04-12,budget;essentials
+2581,expense,rent,savings,Spending on rent,2024-01-27,recurring;essentials
+3702,expense,food,savings,Spending on food,2024-06-17,weekly;weekly
+4288,expense,food,credit_card,Spending on food,2024-05-13,recurring;food
+1089,expense,rent,savings,Spending on rent,2024-10-23,budget;weekly
+434,expense,utilities,checking,Spending on utilities,2024-08-22,essentials;essentials
+7687,income,salary,wallet,Salary,2024-02-22,payroll;salary
+4915,expense,shopping,checking,Spending on shopping,2024-09-18,shopping;shopping
+4601,expense,entertainment,credit_card,Spending on entertainment,2024-04-12,budget;essentials
+1588,expense,food,savings,Spending on food,2024-09-04,recurring;recurring
+4119,expense,shopping,savings,Spending on shopping,2024-12-12,shopping;recurring
+3998,expense,entertainment,credit_card,Spending on entertainment,2024-05-04,essentials;essentials
+4143,expense,food,credit_card,Spending on food,2024-02-25,budget;food
+3540,expense,rent,wallet,Spending on rent,2024-05-13,weekly;budget
+2061,expense,food,credit_card,Spending on food,2024-04-05,essentials;essentials
+1767,expense,rent,credit_card,Spending on rent,2024-12-28,rent;rent
+4764,expense,entertainment,credit_card,Spending on entertainment,2024-11-02,essentials;weekly
+4916,expense,shopping,wallet,Spending on shopping,2024-07-17,essentials;shopping
+3429,expense,food,savings,Spending on food,2024-04-04,recurring;recurring
+2657,expense,transport,checking,Spending on transport,2024-03-19,transport;budget
+2766,expense,entertainment,checking,Spending on entertainment,2024-01-18,weekly;budget
+1243,income,salary,checking,Salary,2024-08-28,monthly;monthly
+8276,income,salary,wallet,Salary,2024-09-04,salary;salary
+2919,income,salary,checking,Salary,2024-09-16,salary;salary
+4066,income,salary,credit_card,Salary,2024-03-28,monthly;salary
+1835,expense,transport,wallet,Spending on transport,2024-04-13,transport;budget
+2030,expense,utilities,credit_card,Spending on utilities,2024-02-29,budget;weekly
+4100,expense,entertainment,credit_card,Spending on entertainment,2024-08-18,budget;essentials
+2980,expense,shopping,credit_card,Spending on shopping,2024-07-06,essentials;shopping
+1328,expense,entertainment,wallet,Spending on entertainment,2024-06-26,recurring;weekly
+3672,expense,entertainment,credit_card,Spending on entertainment,2024-06-26,budget;weekly
+4304,expense,utilities,credit_card,Spending on utilities,2024-11-29,recurring;weekly
+2437,expense,shopping,credit_card,Spending on shopping,2024-09-17,recurring;shopping
+1272,income,salary,savings,Salary,2024-02-12,salary;payroll
+132,expense,shopping,wallet,Spending on shopping,2024-03-27,shopping;budget
+486,expense,entertainment,checking,Spending on entertainment,2024-01-17,budget;budget
+843,expense,entertainment,wallet,Spending on entertainment,2024-10-09,budget;recurring
+1240,income,salary,savings,Salary,2024-02-23,payroll;payroll
+517,expense,transport,savings,Spending on transport,2024-07-31,essentials;recurring
+4075,income,salary,wallet,Salary,2024-12-12,payroll;payroll
+784,expense,entertainment,checking,Spending on entertainment,2024-05-03,budget;essentials
+2333,expense,entertainment,wallet,Spending on entertainment,2024-10-26,weekly;recurring
+8793,income,salary,credit_card,Salary,2024-05-08,payroll;salary
+332,expense,shopping,credit_card,Spending on shopping,2024-08-31,recurring;recurring
+2459,expense,food,wallet,Spending on food,2024-10-17,food;food
+1437,expense,transport,savings,Spending on transport,2024-01-22,essentials;transport
+2341,income,salary,savings,Salary,2024-06-16,salary;salary
+3975,expense,food,savings,Spending on food,2024-01-23,food;food
+417,expense,food,credit_card,Spending on food,2024-02-25,weekly;budget
+1588,expense,shopping,wallet,Spending on shopping,2024-10-09,recurring;budget
+2318,expense,shopping,credit_card,Spending on shopping,2024-10-17,recurring;weekly
+3621,expense,rent,wallet,Spending on rent,2024-01-06,budget;rent
+2796,expense,transport,checking,Spending on transport,2024-01-02,budget;transport
+3251,expense,rent,checking,Spending on rent,2024-11-12,essentials;weekly
+3750,expense,food,wallet,Spending on food,2024-11-25,food;budget
+4620,expense,food,wallet,Spending on food,2024-03-13,food;weekly
+5290,income,salary,savings,Salary,2024-07-26,salary;monthly
+3489,expense,food,wallet,Spending on food,2024-04-23,weekly;weekly
+2197,expense,food,wallet,Spending on food,2024-03-26,budget;essentials
+2200,expense,utilities,wallet,Spending on utilities,2024-07-01,essentials;recurring
+3448,expense,food,savings,Spending on food,2024-12-23,essentials;recurring
+3183,expense,rent,wallet,Spending on rent,2024-11-12,budget;recurring
+1500,expense,entertainment,wallet,Spending on entertainment,2024-12-14,entertainment;budget
+4167,expense,entertainment,credit_card,Spending on entertainment,2024-09-23,entertainment;essentials
+4622,expense,entertainment,checking,Spending on entertainment,2024-04-08,budget;entertainment
+4664,expense,entertainment,checking,Spending on entertainment,2024-09-16,entertainment;weekly
+216,expense,shopping,checking,Spending on shopping,2024-09-17,weekly;weekly
+8820,income,salary,savings,Salary,2024-07-20,monthly;payroll
+1989,expense,shopping,savings,Spending on shopping,2024-11-12,budget;shopping
+4842,expense,transport,wallet,Spending on transport,2024-09-01,weekly;transport
+3381,income,salary,credit_card,Salary,2024-06-13,salary;payroll
+3522,expense,entertainment,savings,Spending on entertainment,2024-04-24,weekly;recurring
+4151,expense,rent,credit_card,Spending on rent,2024-07-22,recurring;budget
+1757,expense,shopping,checking,Spending on shopping,2024-09-15,shopping;budget
+4602,expense,utilities,credit_card,Spending on utilities,2024-09-01,recurring;recurring
+3601,expense,utilities,wallet,Spending on utilities,2024-04-11,weekly;essentials
+3294,expense,utilities,checking,Spending on utilities,2024-09-22,utilities;utilities
+3492,expense,utilities,wallet,Spending on utilities,2024-07-11,budget;budget
+4076,expense,utilities,credit_card,Spending on utilities,2024-09-25,recurring;utilities
+4685,expense,food,credit_card,Spending on food,2024-11-23,budget;weekly
+9998,income,salary,savings,Salary,2024-05-06,payroll;salary
+3394,expense,utilities,credit_card,Spending on utilities,2024-04-09,budget;weekly
+3045,expense,shopping,wallet,Spending on shopping,2024-06-02,budget;budget
+4412,expense,food,wallet,Spending on food,2024-08-13,food;food
+3742,expense,utilities,credit_card,Spending on utilities,2024-10-22,utilities;essentials
+4231,expense,rent,wallet,Spending on rent,2024-02-05,weekly;essentials
+3315,expense,transport,checking,Spending on transport,2024-04-08,weekly;transport
+286,expense,transport,savings,Spending on transport,2024-06-19,budget;recurring
+3926,expense,food,savings,Spending on food,2024-09-20,food;recurring
+3597,expense,rent,credit_card,Spending on rent,2024-09-25,budget;weekly
+1085,expense,shopping,checking,Spending on shopping,2024-08-03,shopping;shopping
+1091,expense,utilities,savings,Spending on utilities,2024-11-09,essentials;essentials
+4778,expense,utilities,credit_card,Spending on utilities,2024-10-11,budget;essentials
+823,expense,entertainment,savings,Spending on entertainment,2024-01-25,essentials;weekly
+1773,expense,transport,credit_card,Spending on transport,2024-06-26,essentials;transport
+2690,expense,utilities,savings,Spending on utilities,2024-01-16,essentials;essentials
+1145,expense,rent,wallet,Spending on rent,2024-02-24,rent;recurring
+1242,expense,shopping,checking,Spending on shopping,2024-08-07,shopping;shopping
+9703,income,salary,wallet,Salary,2024-04-03,salary;salary
+2528,expense,entertainment,savings,Spending on entertainment,2024-01-14,essentials;recurring
+3646,expense,food,credit_card,Spending on food,2024-01-24,essentials;budget
+585,expense,transport,wallet,Spending on transport,2024-11-06,transport;essentials
+1992,expense,rent,savings,Spending on rent,2024-07-16,recurring;budget
+2881,expense,food,checking,Spending on food,2024-10-01,budget;budget
+1138,expense,entertainment,checking,Spending on entertainment,2024-09-25,weekly;weekly
+2891,expense,shopping,checking,Spending on shopping,2024-08-21,weekly;weekly
+2927,expense,entertainment,wallet,Spending on entertainment,2024-04-07,recurring;weekly
+4838,expense,rent,credit_card,Spending on rent,2024-06-22,rent;recurring
+5878,income,salary,savings,Salary,2024-07-16,payroll;monthly
+3559,expense,entertainment,savings,Spending on entertainment,2024-04-10,budget;weekly
+2512,expense,utilities,credit_card,Spending on utilities,2024-07-25,utilities;essentials
+5196,income,salary,wallet,Salary,2024-11-28,payroll;payroll
+3908,expense,entertainment,wallet,Spending on entertainment,2024-10-30,entertainment;recurring
+4591,income,salary,wallet,Salary,2024-02-08,payroll;payroll
+1692,expense,food,credit_card,Spending on food,2024-02-10,weekly;weekly
+2795,expense,rent,checking,Spending on rent,2024-10-05,weekly;recurring
+529,expense,utilities,credit_card,Spending on utilities,2024-03-05,budget;weekly
+441,expense,utilities,wallet,Spending on utilities,2024-10-26,budget;utilities
+4448,expense,entertainment,wallet,Spending on entertainment,2024-07-01,recurring;recurring
+1462,expense,rent,wallet,Spending on rent,2024-02-16,essentials;recurring
+1334,income,salary,credit_card,Salary,2024-10-04,payroll;monthly
+1733,expense,entertainment,credit_card,Spending on entertainment,2024-01-30,weekly;budget
+3534,income,salary,wallet,Salary,2024-05-01,monthly;salary
+236,expense,shopping,checking,Spending on shopping,2024-10-08,recurring;recurring
+2666,expense,utilities,wallet,Spending on utilities,2024-06-13,utilities;recurring
+2066,expense,entertainment,checking,Spending on entertainment,2024-11-08,weekly;essentials
+764,expense,rent,checking,Spending on rent,2024-05-25,rent;recurring
+5413,income,salary,checking,Salary,2024-08-18,monthly;salary
+1638,expense,transport,wallet,Spending on transport,2024-09-14,essentials;essentials
+348,expense,rent,credit_card,Spending on rent,2024-10-09,essentials;essentials
+577,expense,food,checking,Spending on food,2024-12-28,weekly;essentials
+3512,expense,utilities,credit_card,Spending on utilities,2024-01-19,essentials;utilities
+8925,income,salary,checking,Salary,2024-01-22,payroll;payroll
+666,expense,transport,wallet,Spending on transport,2024-11-03,essentials;transport
+3956,expense,entertainment,savings,Spending on entertainment,2024-11-09,recurring;budget
+5157,income,salary,credit_card,Salary,2024-08-17,payroll;monthly
+132,expense,shopping,credit_card,Spending on shopping,2024-06-24,budget;essentials
+1380,expense,transport,savings,Spending on transport,2024-05-28,budget;weekly
+1009,expense,shopping,savings,Spending on shopping,2024-10-30,essentials;shopping
+141,expense,entertainment,wallet,Spending on entertainment,2024-06-19,entertainment;recurring
+215,expense,utilities,checking,Spending on utilities,2024-07-11,weekly;weekly
+1655,income,salary,credit_card,Salary,2024-08-12,payroll;monthly
+1087,expense,transport,checking,Spending on transport,2024-03-21,budget;recurring
+3575,expense,transport,credit_card,Spending on transport,2024-04-08,weekly;transport
+2081,expense,entertainment,wallet,Spending on entertainment,2024-11-16,essentials;budget
+5036,income,salary,credit_card,Salary,2024-09-08,salary;salary
+4975,income,salary,wallet,Salary,2024-10-15,payroll;monthly
+844,expense,food,wallet,Spending on food,2024-01-06,budget;budget
+1775,income,salary,savings,Salary,2024-02-21,salary;salary
+965,expense,rent,savings,Spending on rent,2024-10-15,rent;recurring
+4500,expense,utilities,wallet,Spending on utilities,2024-06-11,utilities;essentials
+274,expense,food,wallet,Spending on food,2024-11-04,weekly;weekly
+8571,income,salary,checking,Salary,2024-08-13,salary;payroll
+4110,income,salary,savings,Salary,2024-02-13,salary;salary
+2137,expense,transport,checking,Spending on transport,2024-10-25,weekly;recurring
+5768,income,salary,savings,Salary,2024-07-16,payroll;salary
+7911,income,salary,credit_card,Salary,2024-06-27,monthly;monthly
+3590,expense,transport,credit_card,Spending on transport,2024-06-19,budget;transport
+4282,expense,food,savings,Spending on food,2024-01-22,recurring;food
+604,expense,shopping,wallet,Spending on shopping,2024-08-15,budget;budget
+6833,income,salary,savings,Salary,2024-04-09,monthly;monthly
+3018,income,salary,wallet,Salary,2024-11-06,monthly;salary
+2980,income,salary,wallet,Salary,2024-04-25,salary;salary
+4803,expense,entertainment,savings,Spending on entertainment,2024-05-28,entertainment;entertainment
+4900,expense,transport,credit_card,Spending on transport,2024-03-18,weekly;transport
+230,expense,utilities,checking,Spending on utilities,2024-02-10,essentials;weekly
+6853,income,salary,credit_card,Salary,2024-04-21,salary;payroll
+3928,expense,food,checking,Spending on food,2024-03-22,budget;weekly
+826,expense,shopping,checking,Spending on shopping,2024-07-13,shopping;recurring
+756,expense,shopping,wallet,Spending on shopping,2024-12-07,shopping;weekly
+1178,expense,food,savings,Spending on food,2024-11-28,recurring;recurring
+414,expense,rent,checking,Spending on rent,2024-02-10,essentials;rent
+2490,expense,food,wallet,Spending on food,2024-07-08,weekly;essentials
+3945,expense,rent,wallet,Spending on rent,2024-03-26,essentials;weekly
+6385,income,salary,savings,Salary,2024-05-13,salary;monthly
+348,expense,entertainment,wallet,Spending on entertainment,2024-04-19,weekly;entertainment
+2658,expense,shopping,savings,Spending on shopping,2024-11-09,essentials;budget
+2412,expense,rent,credit_card,Spending on rent,2024-10-18,recurring;rent
+3985,expense,transport,wallet,Spending on transport,2024-08-31,weekly;transport
+4880,income,salary,savings,Salary,2024-11-04,payroll;salary
+2075,expense,shopping,checking,Spending on shopping,2024-03-05,recurring;weekly
+1433,expense,utilities,wallet,Spending on utilities,2024-03-02,essentials;weekly
+3869,expense,rent,checking,Spending on rent,2024-06-03,rent;weekly
+787,expense,rent,checking,Spending on rent,2024-02-29,rent;rent
+4734,expense,utilities,credit_card,Spending on utilities,2024-09-17,budget;utilities
+2556,expense,transport,checking,Spending on transport,2024-12-07,essentials;recurring
+3426,expense,rent,wallet,Spending on rent,2024-08-25,budget;recurring
+4764,expense,entertainment,credit_card,Spending on entertainment,2024-06-20,essentials;recurring
+1394,expense,shopping,credit_card,Spending on shopping,2024-12-06,recurring;budget
+1333,income,salary,wallet,Salary,2024-12-29,payroll;salary
+3539,expense,food,savings,Spending on food,2024-10-13,essentials;weekly
+879,expense,transport,wallet,Spending on transport,2024-07-13,transport;essentials
+3528,expense,entertainment,savings,Spending on entertainment,2024-11-08,entertainment;recurring
+6915,income,salary,checking,Salary,2024-12-29,monthly;monthly
+4603,expense,entertainment,credit_card,Spending on entertainment,2024-11-08,weekly;budget
+8069,income,salary,checking,Salary,2024-05-20,payroll;monthly
+2262,expense,entertainment,checking,Spending on entertainment,2024-03-19,weekly;budget
+1834,expense,transport,checking,Spending on transport,2024-09-07,transport;essentials
+1185,expense,food,savings,Spending on food,2024-08-21,essentials;weekly
+1563,expense,shopping,wallet,Spending on shopping,2024-10-28,shopping;shopping
+2468,expense,transport,credit_card,Spending on transport,2024-08-10,transport;weekly
+3428,expense,utilities,wallet,Spending on utilities,2024-05-31,weekly;budget
+4995,expense,food,checking,Spending on food,2024-09-03,budget;recurring
+1851,expense,food,credit_card,Spending on food,2024-03-08,weekly;recurring
+4517,income,salary,checking,Salary,2024-02-08,salary;payroll
+1787,expense,rent,savings,Spending on rent,2024-06-15,weekly;rent
+838,expense,utilities,checking,Spending on utilities,2024-05-12,budget;recurring
+827,expense,entertainment,wallet,Spending on entertainment,2024-06-02,weekly;essentials
+8203,income,salary,savings,Salary,2024-10-10,payroll;monthly
+4515,expense,utilities,wallet,Spending on utilities,2024-03-02,weekly;recurring
+3803,income,salary,checking,Salary,2024-01-30,salary;monthly
+2887,expense,entertainment,credit_card,Spending on entertainment,2024-12-15,recurring;budget
+3029,expense,transport,checking,Spending on transport,2024-06-19,essentials;recurring
+5039,income,salary,checking,Salary,2024-05-22,salary;payroll
+2106,expense,entertainment,checking,Spending on entertainment,2024-08-06,essentials;budget
+2970,expense,utilities,savings,Spending on utilities,2024-08-08,essentials;budget
+2476,expense,rent,checking,Spending on rent,2024-02-01,essentials;rent
+3135,expense,transport,checking,Spending on transport,2024-09-28,essentials;essentials
+2058,expense,rent,checking,Spending on rent,2024-02-27,rent;essentials
+2242,expense,shopping,wallet,Spending on shopping,2024-11-04,budget;shopping
+8011,income,salary,checking,Salary,2024-08-07,payroll;payroll
+7358,income,salary,wallet,Salary,2024-07-21,salary;monthly
+7823,income,salary,savings,Salary,2024-11-07,monthly;salary
+4450,expense,shopping,credit_card,Spending on shopping,2024-04-03,recurring;shopping
+2175,expense,utilities,savings,Spending on utilities,2024-07-24,budget;utilities
+3363,expense,shopping,credit_card,Spending on shopping,2024-02-17,shopping;recurring
+9130,income,salary,checking,Salary,2024-01-20,monthly;payroll
+3421,expense,entertainment,credit_card,Spending on entertainment,2024-07-04,weekly;budget
+2592,expense,shopping,savings,Spending on shopping,2024-04-05,shopping;shopping
+2590,income,salary,wallet,Salary,2024-09-08,payroll;monthly
+4530,income,salary,wallet,Salary,2024-01-25,salary;monthly
+4355,expense,transport,checking,Spending on transport,2024-12-03,budget;essentials
+3590,expense,transport,checking,Spending on transport,2024-08-21,budget;recurring
+1977,expense,transport,wallet,Spending on transport,2024-09-09,transport;weekly
+2702,expense,utilities,savings,Spending on utilities,2024-06-29,budget;budget
+3077,expense,rent,credit_card,Spending on rent,2024-11-23,weekly;recurring
+3547,expense,entertainment,savings,Spending on entertainment,2024-07-28,entertainment;weekly
+2358,expense,food,wallet,Spending on food,2024-12-24,essentials;budget
+4923,expense,utilities,wallet,Spending on utilities,2024-03-11,budget;budget
+6086,income,salary,wallet,Salary,2024-03-15,monthly;payroll
+7831,income,salary,credit_card,Salary,2024-02-12,payroll;salary
+685,expense,rent,credit_card,Spending on rent,2024-08-04,weekly;rent
+1977,expense,shopping,wallet,Spending on shopping,2024-01-19,shopping;essentials
+1106,expense,rent,savings,Spending on rent,2024-05-27,rent;essentials
+2015,expense,transport,wallet,Spending on transport,2024-01-02,budget;essentials
+706,expense,shopping,credit_card,Spending on shopping,2024-06-13,recurring;budget
+4661,expense,transport,checking,Spending on transport,2024-06-10,recurring;transport
+6519,income,salary,savings,Salary,2024-02-28,monthly;salary
+3673,expense,utilities,checking,Spending on utilities,2024-01-24,utilities;recurring
+1346,expense,rent,wallet,Spending on rent,2024-04-09,rent;weekly
+4090,expense,food,wallet,Spending on food,2024-12-30,essentials;essentials
+4375,expense,rent,savings,Spending on rent,2024-06-21,rent;budget
+1497,expense,transport,savings,Spending on transport,2024-09-15,recurring;essentials
+4786,expense,food,savings,Spending on food,2024-08-16,food;weekly
+2029,income,salary,wallet,Salary,2024-09-02,salary;monthly
+1823,expense,entertainment,checking,Spending on entertainment,2024-07-23,budget;entertainment
+2968,expense,entertainment,credit_card,Spending on entertainment,2024-08-19,budget;weekly
+4092,expense,shopping,credit_card,Spending on shopping,2024-04-03,weekly;recurring
+3071,expense,transport,wallet,Spending on transport,2024-05-13,recurring;recurring
+8105,income,salary,checking,Salary,2024-07-07,payroll;salary
+458,expense,rent,checking,Spending on rent,2024-12-24,recurring;recurring
+1838,expense,utilities,savings,Spending on utilities,2024-08-27,essentials;essentials
+3007,expense,rent,savings,Spending on rent,2024-06-15,essentials;essentials
+5848,income,salary,checking,Salary,2024-09-27,payroll;monthly
+2682,income,salary,credit_card,Salary,2024-07-22,monthly;monthly
+2285,income,salary,checking,Salary,2024-08-11,payroll;monthly
+6226,income,salary,wallet,Salary,2024-09-17,salary;payroll
+3012,expense,entertainment,wallet,Spending on entertainment,2024-11-14,recurring;weekly
+3340,income,salary,checking,Salary,2024-08-05,monthly;monthly
+3545,expense,entertainment,checking,Spending on entertainment,2024-06-16,weekly;recurring
+3794,expense,rent,credit_card,Spending on rent,2024-05-25,rent;rent
+1486,expense,utilities,checking,Spending on utilities,2024-04-03,weekly;utilities
+2501,expense,entertainment,savings,Spending on entertainment,2024-06-23,entertainment;recurring
+2842,expense,utilities,credit_card,Spending on utilities,2024-09-10,essentials;utilities
+884,expense,utilities,checking,Spending on utilities,2024-06-15,essentials;essentials
+4910,income,salary,checking,Salary,2024-08-16,payroll;payroll
+4666,expense,food,wallet,Spending on food,2024-12-16,essentials;food
+1351,expense,utilities,savings,Spending on utilities,2024-07-21,essentials;weekly
+4044,expense,entertainment,checking,Spending on entertainment,2024-08-17,recurring;budget
+1201,expense,utilities,wallet,Spending on utilities,2024-02-24,weekly;recurring
+835,expense,rent,wallet,Spending on rent,2024-03-22,recurring;essentials
+7394,income,salary,savings,Salary,2024-01-15,payroll;payroll
+1664,income,salary,savings,Salary,2024-04-29,payroll;payroll
+4383,expense,rent,credit_card,Spending on rent,2024-02-01,weekly;budget
+3483,expense,rent,savings,Spending on rent,2024-11-18,essentials;weekly
+8972,income,salary,wallet,Salary,2024-09-04,monthly;payroll
+8068,income,salary,savings,Salary,2024-04-22,payroll;payroll
+2251,income,salary,credit_card,Salary,2024-05-19,monthly;payroll
+4863,expense,food,credit_card,Spending on food,2024-11-05,budget;essentials
+1387,expense,transport,savings,Spending on transport,2024-05-27,weekly;weekly
+2917,expense,utilities,checking,Spending on utilities,2024-09-15,utilities;weekly
+9223,income,salary,checking,Salary,2024-04-02,monthly;salary
+6563,income,salary,savings,Salary,2024-06-05,monthly;monthly
+3519,expense,shopping,checking,Spending on shopping,2024-07-28,shopping;budget
+2318,expense,transport,wallet,Spending on transport,2024-10-20,recurring;transport
+2117,expense,food,wallet,Spending on food,2024-01-03,food;recurring
+3934,expense,utilities,wallet,Spending on utilities,2024-08-30,weekly;essentials
+153,expense,food,savings,Spending on food,2024-07-07,recurring;budget
+2175,expense,food,savings,Spending on food,2024-11-22,recurring;budget
+3196,expense,food,wallet,Spending on food,2024-05-26,weekly;food
+3881,expense,entertainment,checking,Spending on entertainment,2024-09-02,recurring;recurring
+9283,income,salary,wallet,Salary,2024-06-08,salary;payroll
+4704,expense,entertainment,credit_card,Spending on entertainment,2024-04-26,budget;recurring
+4449,expense,utilities,credit_card,Spending on utilities,2024-03-18,utilities;weekly
+2618,expense,food,wallet,Spending on food,2024-03-04,weekly;essentials
+4211,expense,entertainment,wallet,Spending on entertainment,2024-10-24,essentials;weekly
+666,expense,rent,savings,Spending on rent,2024-05-14,recurring;rent
+2198,expense,entertainment,wallet,Spending on entertainment,2024-03-22,recurring;essentials
+1638,expense,entertainment,wallet,Spending on entertainment,2024-01-01,essentials;recurring
+2946,expense,transport,savings,Spending on transport,2024-10-04,transport;essentials
+2184,expense,rent,credit_card,Spending on rent,2024-09-06,recurring;essentials
+3217,expense,utilities,credit_card,Spending on utilities,2024-11-06,essentials;recurring
+5144,income,salary,wallet,Salary,2024-09-08,salary;monthly
+1671,expense,entertainment,credit_card,Spending on entertainment,2024-05-06,entertainment;recurring
+1517,expense,utilities,wallet,Spending on utilities,2024-01-14,essentials;utilities
+4419,expense,shopping,savings,Spending on shopping,2024-04-20,shopping;essentials
+4484,expense,shopping,savings,Spending on shopping,2024-10-04,budget;recurring
+4219,expense,utilities,wallet,Spending on utilities,2024-10-20,essentials;recurring
+1688,expense,utilities,savings,Spending on utilities,2024-07-29,recurring;recurring
+1616,expense,transport,checking,Spending on transport,2024-04-21,recurring;transport
+403,expense,rent,savings,Spending on rent,2024-12-27,budget;essentials
+1477,expense,utilities,checking,Spending on utilities,2024-10-19,essentials;utilities
+5381,income,salary,wallet,Salary,2024-04-04,salary;salary
+113,expense,transport,credit_card,Spending on transport,2024-03-06,budget;essentials
+2687,expense,transport,savings,Spending on transport,2024-01-23,recurring;budget
+2545,expense,rent,savings,Spending on rent,2024-12-20,essentials;recurring
+1957,income,salary,credit_card,Salary,2024-11-17,salary;monthly
+1625,income,salary,wallet,Salary,2024-12-22,payroll;salary
+2829,expense,transport,savings,Spending on transport,2024-07-11,weekly;weekly
+4332,expense,utilities,credit_card,Spending on utilities,2024-01-24,recurring;weekly
+4219,expense,utilities,savings,Spending on utilities,2024-08-06,essentials;essentials
+3038,expense,entertainment,savings,Spending on entertainment,2024-08-12,entertainment;essentials
+4232,expense,utilities,savings,Spending on utilities,2024-05-25,recurring;weekly
+3992,expense,transport,credit_card,Spending on transport,2024-11-18,transport;recurring
+4132,income,salary,savings,Salary,2024-06-21,salary;monthly
+3181,expense,entertainment,credit_card,Spending on entertainment,2024-01-23,essentials;essentials
+2617,expense,food,savings,Spending on food,2024-02-13,budget;weekly
+4526,expense,shopping,wallet,Spending on shopping,2024-10-16,recurring;weekly
+1636,income,salary,wallet,Salary,2024-10-01,payroll;salary
+4371,income,salary,savings,Salary,2024-04-28,monthly;payroll
+4920,income,salary,wallet,Salary,2024-08-12,payroll;salary
+1875,expense,transport,credit_card,Spending on transport,2024-01-19,recurring;essentials
+5884,income,salary,checking,Salary,2024-01-08,monthly;monthly
+2144,expense,rent,checking,Spending on rent,2024-09-19,weekly;recurring
+8406,income,salary,credit_card,Salary,2024-11-22,salary;salary
+3016,income,salary,savings,Salary,2024-02-18,payroll;payroll
+1569,income,salary,checking,Salary,2024-08-01,monthly;payroll
+2303,expense,food,wallet,Spending on food,2024-04-27,budget;essentials
+6544,income,salary,credit_card,Salary,2024-03-24,monthly;salary
+611,expense,transport,checking,Spending on transport,2024-03-05,recurring;transport
+1265,expense,shopping,wallet,Spending on shopping,2024-11-24,weekly;weekly
+4519,income,salary,savings,Salary,2024-11-02,payroll;salary
+247,expense,entertainment,credit_card,Spending on entertainment,2024-03-14,budget;budget
+4234,expense,food,savings,Spending on food,2024-10-11,essentials;food
+3349,expense,transport,wallet,Spending on transport,2024-04-09,weekly;transport
+4578,expense,utilities,credit_card,Spending on utilities,2024-12-05,weekly;recurring
+4260,expense,entertainment,credit_card,Spending on entertainment,2024-06-11,weekly;weekly
+3418,income,salary,savings,Salary,2024-04-22,monthly;monthly
+2460,expense,entertainment,wallet,Spending on entertainment,2024-03-28,essentials;budget
+4361,expense,shopping,credit_card,Spending on shopping,2024-04-21,recurring;recurring
+2679,expense,entertainment,wallet,Spending on entertainment,2024-10-15,weekly;entertainment

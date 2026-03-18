@@ -1,0 +1,6 @@
+amount,type,category,tags,account,merchant
+1233,expense,shopping,budget;shopping,checking,MallBox
+2959,expense,shopping,budget;budget,wallet,MallBox
+2617,expense,entertainment,entertainment;essentials,checking,PlayStation Place
+2567,expense,rent,essentials;budget,savings,City Realty
+2202,income,salary,monthly;salary,savings,SalaryWave
