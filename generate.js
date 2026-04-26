@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-// Optional CSV columns ("features") we can include beyond amount,type,category.
+// Optional CSV columns ("features") we can include beyond amount,type,category,date.
 const OPTIONAL_COLUMNS = [
   "description",
   "date",
@@ -121,24 +121,29 @@ function buildRow({ type, category, amount, featureKeys, seed }) {
   return row;
 }
 
-function main() {
-  const args = parseArgs(process.argv);
+function getDefaultDateWindow() {
+  const end = new Date();
+  const start = new Date(end.getFullYear(), end.getMonth() - 11, 1);
+  return {
+    startDate: start.toISOString().slice(0, 10),
+    endDate: end.toISOString().slice(0, 10),
+  };
+}
 
-  const rows = Math.max(1, Number(args.rows ?? 500));
-  const features = Math.max(0, Number(args.features ?? 3));
-  const out = String(args.out ?? "transactions.csv");
-
-  const incomeProbability = Math.min(
-    0.95,
-    Math.max(0.05, Number(args.incomeProbability ?? 0.2))
-  );
-
-  const startDate = String(args.startDate ?? "2024-01-01");
-  const endDate = String(args.endDate ?? "2024-12-31");
+function generateCsvContent({
+  rows = 500,
+  features = 3,
+  incomeProbability = 0.2,
+  startDate,
+  endDate,
+} = {}) {
+  const defaults = getDefaultDateWindow();
+  const resolvedStartDate = startDate || defaults.startDate;
+  const resolvedEndDate = endDate || defaults.endDate;
 
   // Choose N optional columns.
-  const shuffled = [...OPTIONAL_COLUMNS].sort(() => Math.random() - 0.5);
-  const featureKeys = shuffled.slice(0, Math.min(features, OPTIONAL_COLUMNS.length));
+  const shuffled = OPTIONAL_COLUMNS.filter((key) => key !== "date").sort(() => Math.random() - 0.5);
+  const featureKeys = ["date", ...shuffled.slice(0, Math.min(features, OPTIONAL_COLUMNS.length - 1))];
 
   // Build header: base columns first (must match your upload normalization),
   // then optional feature columns in the chosen order.
@@ -166,20 +171,58 @@ function main() {
 
     // Fill date after build (so buildRow stays simple).
     if (featureKeys.includes("date")) {
-      row.date = randomDateBetween(startDate, endDate);
+      row.date = randomDateBetween(resolvedStartDate, resolvedEndDate);
     }
 
     const line = headerKeys.map((k) => csvEscape(row[k])).join(",");
     csv += `${line}\n`;
   }
 
-  fs.writeFileSync(out, csv, "utf8");
+  return {
+    csv,
+    featureKeys,
+    rows,
+  };
+}
+
+function main() {
+  const args = parseArgs(process.argv);
+
+  const rows = Math.max(1, Number(args.rows ?? 500));
+  const features = Math.max(0, Number(args.features ?? 3));
+  const out = String(args.out ?? "transactions.csv");
+
+  const incomeProbability = Math.min(
+    0.95,
+    Math.max(0.05, Number(args.incomeProbability ?? 0.2))
+  );
+
+  const defaults = getDefaultDateWindow();
+  const startDate = String(args.startDate ?? defaults.startDate);
+  const endDate = String(args.endDate ?? defaults.endDate);
+
+  const result = generateCsvContent({
+    rows,
+    features,
+    incomeProbability,
+    startDate: resolvedStartDate,
+    endDate: resolvedEndDate,
+  });
+
+  fs.writeFileSync(out, result.csv, "utf8");
   console.log(
-    `CSV generated: ${rows} rows -> ${out} (features: ${featureKeys.join(
+    `CSV generated: ${rows} rows -> ${out} (features: ${result.featureKeys.join(
       ", "
     ) || "none"})`
   );
 }
 
-main();
+if (require.main === module) {
+  main();
+}
+
+module.exports = {
+  generateCsvContent,
+  parseArgs,
+};
 

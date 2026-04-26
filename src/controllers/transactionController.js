@@ -1,6 +1,7 @@
 const Transaction = require('../models/Transaction');
 const TransactionService = require('../services/transactionService');
 const { successResponse, errorResponse } = require('../utils/response');
+const { transactionValidation } = require('../utils/validators');
 
 // @desc    Get all transactions
 // @route   GET /api/transactions
@@ -38,9 +39,36 @@ const getTransaction = async (req, res, next) => {
 // @access  Private
 const createTransaction = async (req, res, next) => {
   try {
+    const { error } = transactionValidation.validate(req.body);
+    if (error) {
+      return errorResponse(res, error.details[0].message, 400);
+    }
+
     const transaction = await TransactionService.createTransaction(req.user._id, req.body);
 
     successResponse(res, 'Transaction created successfully', { transaction }, 201);
+  } catch (error) {
+    next(error);
+  }
+};
+
+const bulkCreateTransactions = async (req, res, next) => {
+  try {
+    const { transactions } = req.body;
+
+    if (!Array.isArray(transactions) || transactions.length === 0) {
+      return errorResponse(res, 'Please provide a non-empty transactions array', 400);
+    }
+
+    for (const transaction of transactions) {
+      const { error } = transactionValidation.validate(transaction);
+      if (error) {
+        return errorResponse(res, `Invalid transaction: ${error.details[0].message}`, 400);
+      }
+    }
+
+    const createdTransactions = await TransactionService.bulkCreateTransactions(req.user._id, transactions);
+    successResponse(res, 'Transactions created successfully', { transactions: createdTransactions }, 201);
   } catch (error) {
     next(error);
   }
@@ -51,6 +79,14 @@ const createTransaction = async (req, res, next) => {
 // @access  Private
 const updateTransaction = async (req, res, next) => {
   try {
+    const { error } = transactionValidation.fork(
+      ['amount', 'description', 'category', 'type'],
+      (schema) => schema.optional()
+    ).validate(req.body);
+    if (error) {
+      return errorResponse(res, error.details[0].message, 400);
+    }
+
     const transaction = await TransactionService.updateTransaction(req.params.id, req.user._id, req.body);
 
     if (!transaction) {
@@ -131,6 +167,7 @@ module.exports = {
   getTransactions,
   getTransaction,
   createTransaction,
+  bulkCreateTransactions,
   updateTransaction,
   deleteTransaction,
   getTransactionSummary,

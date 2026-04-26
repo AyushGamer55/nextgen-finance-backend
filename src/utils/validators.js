@@ -60,11 +60,48 @@ const updateUserValidation = Joi.object({
     .email()
     .messages({
       'string.email': 'Please provide a valid email'
-    })
+    }),
+  phone: Joi.string()
+    .trim()
+    .max(20)
+    .allow(''),
+  bio: Joi.string()
+    .trim()
+    .max(240)
+    .allow(''),
+  avatar: Joi.string()
+    .allow('')
+});
+
+const transactionValidation = Joi.object({
+  amount: Joi.number().positive().required(),
+  description: Joi.string().trim().max(200).required(),
+  category: Joi.string().trim().max(100).required(),
+  type: Joi.string().valid('income', 'expense', 'transfer').required(),
+  date: Joi.date().optional(),
+  paymentMethod: Joi.string().valid('cash', 'credit_card', 'debit_card', 'bank_transfer', 'digital_wallet', 'other').optional(),
+  tags: Joi.array().items(Joi.string().trim().max(30)).optional(),
+  isRecurring: Joi.boolean().optional(),
+  recurringFrequency: Joi.string().valid('daily', 'weekly', 'monthly', 'yearly').optional(),
+  budget: Joi.string().optional().allow(null, ''),
+  receipt: Joi.string().optional().allow('', null)
+});
+
+const aiChatValidation = Joi.object({
+  userId: Joi.string().optional(),
+  message: Joi.string().trim().min(1).max(1000).required()
+});
+
+const changePasswordValidation = Joi.object({
+  currentPassword: Joi.string().required(),
+  newPassword: Joi.string().min(6).required(),
 });
 
 module.exports = {
   registerValidation,
   loginValidation,
-  updateUserValidation
+  updateUserValidation,
+  transactionValidation,
+  aiChatValidation,
+  changePasswordValidation
 };

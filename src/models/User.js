@@ -26,8 +26,23 @@ const userSchema = new mongoose.Schema({
   },
   balance: {
     type: Number,
-    default: 0,
-    min: [0, 'Balance cannot be negative']
+    default: 0
+  },
+  phone: {
+    type: String,
+    trim: true,
+    maxlength: [20, 'Phone cannot be more than 20 characters'],
+    default: ''
+  },
+  bio: {
+    type: String,
+    trim: true,
+    maxlength: [240, 'Bio cannot be more than 240 characters'],
+    default: ''
+  },
+  avatar: {
+    type: String,
+    default: ''
   }
 }, {
   timestamps: true,
@@ -39,12 +54,13 @@ const userSchema = new mongoose.Schema({
 userSchema.pre('save', async function(next) {
   // Only run if password is modified
   if (!this.isModified('password')) {
-    next();
+    return next();
   }
 
   // Hash password with cost of 12
   const salt = await bcrypt.genSalt(12);
   this.password = await bcrypt.hash(this.password, salt);
+  return next();
 });
 
 // Match user entered password to hashed password in database

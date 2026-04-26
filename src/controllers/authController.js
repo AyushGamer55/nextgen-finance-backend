@@ -1,7 +1,8 @@
 const User = require('../models/User');
 const generateToken = require('../utils/generateToken');
 const { successResponse, errorResponse } = require('../utils/response');
-const { registerValidation, loginValidation } = require('../utils/validators');
+const { registerValidation, loginValidation, changePasswordValidation } = require('../utils/validators');
+const { buildSandboxIdentity } = require('../utils/accountIdentity');
 
 // @desc    Register user
 // @route   POST /api/auth/register
@@ -39,7 +40,11 @@ const register = async (req, res, next) => {
         name: user.name,
         email: user.email,
         balance: user.balance,
-        createdAt: user.createdAt
+        phone: user.phone,
+        bio: user.bio,
+        avatar: user.avatar,
+        createdAt: user.createdAt,
+        ...buildSandboxIdentity(user),
       },
       token
     }, 201);
@@ -83,7 +88,11 @@ const login = async (req, res, next) => {
         name: user.name,
         email: user.email,
         balance: user.balance,
-        createdAt: user.createdAt
+        phone: user.phone,
+        bio: user.bio,
+        avatar: user.avatar,
+        createdAt: user.createdAt,
+        ...buildSandboxIdentity(user),
       },
       token
     });
@@ -93,7 +102,42 @@ const login = async (req, res, next) => {
   }
 };
 
+// @desc    Change user password
+// @route   POST /api/auth/change-password
+// @access  Private
+const changePassword = async (req, res, next) => {
+  try {
+    const { error } = changePasswordValidation.validate(req.body);
+    if (error) {
+      return errorResponse(res, error.details[0].message, 400);
+    }
+
+    const { currentPassword, newPassword } = req.body;
+    if (currentPassword === newPassword) {
+      return errorResponse(res, 'New password must be different from current password', 400);
+    }
+
+    const user = await User.findById(req.user._id).select('+password');
+    if (!user) {
+      return errorResponse(res, 'User not found', 404);
+    }
+
+    const isMatch = await user.matchPassword(currentPassword);
+    if (!isMatch) {
+      return errorResponse(res, 'Current password is incorrect', 400);
+    }
+
+    user.password = newPassword;
+    await user.save();
+
+    successResponse(res, 'Password updated successfully');
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   register,
-  login
+  login,
+  changePassword,
 };

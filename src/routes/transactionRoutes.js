@@ -4,6 +4,7 @@ const {
   getTransactions,
   getTransaction,
   createTransaction,
+  bulkCreateTransactions,
   updateTransaction,
   deleteTransaction,
   getTransactionSummary,
@@ -27,6 +28,12 @@ router.get('/trends', getMonthlyTrends);
 // @route   POST /api/transactions
 router.post('/', createTransaction);
 
+// @route   POST /api/transactions/bulk
+router.post('/bulk', bulkCreateTransactions);
+
+// @route   DELETE /api/transactions/bulk
+router.delete('/bulk', bulkDeleteTransactions);
+
 // @route   GET /api/transactions/:id
 router.get('/:id', getTransaction);
 
@@ -35,8 +42,5 @@ router.put('/:id', updateTransaction);
 
 // @route   DELETE /api/transactions/:id
 router.delete('/:id', deleteTransaction);
-
-// @route   DELETE /api/transactions/bulk
-router.delete('/bulk', bulkDeleteTransactions);
 
 module.exports = router;

@@ -1,0 +1,21 @@
+amount,type,category,account,tags,merchant,paymentMethod
+3138,expense,utilities,credit_card,weekly;utilities,PowerGrid,cash
+2935,expense,shopping,wallet,shopping;essentials,MallBox,credit_card
+2806,expense,rent,checking,weekly;budget,Landlord Co.,credit_card
+2088,expense,entertainment,checking,recurring;recurring,MovieWorld,debit_card
+2378,income,salary,checking,salary;payroll,Employer Inc.,debit_card
+3222,income,salary,checking,monthly;monthly,Employer Inc.,credit_card
+2677,expense,shopping,checking,budget;essentials,ShopSphere,debit_card
+1227,expense,transport,savings,essentials;recurring,RoadRunner Fuel,cash
+1625,expense,rent,checking,rent;essentials,City Realty,cash
+7942,income,salary,wallet,monthly;monthly,SalaryWave,bank_transfer
+2429,expense,transport,checking,transport;transport,MetroGo,bank_transfer
+2814,expense,transport,credit_card,recurring;essentials,RoadRunner Fuel,debit_card
+1743,expense,shopping,credit_card,recurring;essentials,MallBox,cash
+7917,income,salary,wallet,monthly;payroll,SalaryWave,credit_card
+2439,income,salary,credit_card,monthly;monthly,SalaryWave,bank_transfer
+8129,income,salary,wallet,monthly;monthly,Employer Inc.,bank_transfer
+4226,expense,shopping,checking,recurring;weekly,Bazaar Brothers,bank_transfer
+1435,income,salary,checking,payroll;monthly,PayrollPro,bank_transfer
+1709,expense,entertainment,credit_card,weekly;budget,PlayStation Place,debit_card
+3937,income,salary,credit_card,monthly;monthly,SalaryWave,debit_card

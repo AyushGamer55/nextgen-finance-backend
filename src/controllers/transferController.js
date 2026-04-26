@@ -1,83 +1,111 @@
 const User = require('../models/User');
 const Transaction = require('../models/Transaction');
 const { successResponse, errorResponse } = require('../utils/response');
+const NotificationService = require('../services/notificationService');
+const { buildSandboxIdentity } = require('../utils/accountIdentity');
 
 // @desc    Simulate transfer between users
 // @route   POST /api/transfers/simulate
 // @access  Private
 const simulateTransfer = async (req, res, next) => {
   try {
-    const { recipientEmail, amount, description } = req.body;
+    const { recipientEmail, recipientUpiId, recipientAccountNumber, amount, description } = req.body;
+    const transferAmount = Number(amount);
 
     // Validation
-    if (!recipientEmail || !amount) {
-      return errorResponse(res, 'Recipient email and amount are required', 400);
+    if ((!recipientEmail && !recipientUpiId && !recipientAccountNumber) || !transferAmount) {
+      return errorResponse(res, 'Recipient and amount are required', 400);
     }
 
-    if (amount <= 0) {
+    if (transferAmount <= 0) {
       return errorResponse(res, 'Transfer amount must be positive', 400);
-    }
-
-    if (req.user.email === recipientEmail) {
-      return errorResponse(res, 'Cannot transfer to yourself', 400);
     }
 
     // Check sender balance
     const sender = await User.findById(req.user._id);
-    if (sender.balance < amount) {
+    if (sender.balance < transferAmount) {
       return errorResponse(res, 'Insufficient balance', 400);
     }
 
-    // Find recipient
-    const recipient = await User.findOne({ email: recipientEmail });
+    const allRecipients = await User.find({
+      _id: { $ne: req.user._id },
+    }).select('name email balance');
+
+    const recipient = allRecipients.find((candidate) => {
+      const identity = buildSandboxIdentity(candidate);
+      return (
+        (recipientEmail && candidate.email.toLowerCase() === String(recipientEmail).toLowerCase()) ||
+        (recipientUpiId && identity.sandboxUpiId === recipientUpiId) ||
+        (recipientAccountNumber && identity.sandboxAccountNumber === recipientAccountNumber)
+      );
+    });
+
     if (!recipient) {
       return errorResponse(res, 'Recipient not found', 404);
     }
 
-    // Simulate transfer (in real app, this would involve payment processing)
-    const transferDescription = description || `Transfer from ${sender.name}`;
+    if (String(sender._id) === String(recipient._id)) {
+      return errorResponse(res, 'Cannot transfer to yourself', 400);
+    }
 
-    // Create transaction records for both users
+    const transferDescription = description || `Transfer to ${recipient.name}`;
+
     const senderTransaction = await Transaction.create({
       user: sender._id,
-      amount,
+      amount: transferAmount,
       description: transferDescription,
       category: 'Transfer',
-      type: 'transfer',
+      type: 'expense',
       date: new Date(),
-      paymentMethod: 'bank_transfer'
+      paymentMethod: 'bank_transfer',
     });
 
     const recipientTransaction = await Transaction.create({
       user: recipient._id,
-      amount,
+      amount: transferAmount,
       description: `Transfer from ${sender.name}`,
       category: 'Transfer',
-      type: 'income', // Recipient receives as income
+      type: 'income',
       date: new Date(),
-      paymentMethod: 'bank_transfer'
+      paymentMethod: 'bank_transfer',
     });
 
-    // Update balances
-    sender.balance -= amount;
-    recipient.balance += amount;
-
-    await sender.save();
-    await recipient.save();
+    await NotificationService.createNotification(sender._id, {
+      title: 'Transfer sent',
+      text: `${transferAmount.toLocaleString('en-IN')} sent to ${recipient.name}.`,
+      type: 'transaction',
+      source: 'transfers',
+      metadata: {
+        transactionId: senderTransaction._id,
+        recipientId: recipient._id,
+      },
+    });
+    await NotificationService.createNotification(recipient._id, {
+      title: 'Transfer received',
+      text: `${transferAmount.toLocaleString('en-IN')} received from ${sender.name}.`,
+      type: 'transaction',
+      source: 'transfers',
+      metadata: {
+        transactionId: recipientTransaction._id,
+        senderId: sender._id,
+      },
+    });
 
     successResponse(res, 'Transfer simulated successfully', {
       transfer: {
         id: `transfer_${Date.now()}`,
-        amount,
+        amount: transferAmount,
         sender: {
           id: sender._id,
           name: sender.name,
-          email: sender.email
+          email: sender.email,
+          ...buildSandboxIdentity(sender),
         },
         recipient: {
           id: recipient._id,
           name: recipient.name,
-          email: recipient.email
+          email: recipient.email,
+          ...buildSandboxIdentity(recipient),
         },
         description: transferDescription,
         timestamp: new Date(),
@@ -140,9 +168,12 @@ const getTransferStats = async (req, res, next) => {
       category: 'Transfer'
     });
 
+    const sentTransfers = transfers.filter((transfer) => transfer.type === 'expense');
+    const receivedTransfers = transfers.filter((transfer) => transfer.type === 'income');
     const stats = {
       totalTransfers: transfers.length,
-      totalSent: transfers.reduce((sum, transfer) => sum + transfer.amount, 0),
+      totalSent: sentTransfers.reduce((sum, transfer) => sum + transfer.amount, 0),
+      totalReceived: receivedTransfers.reduce((sum, transfer) => sum + transfer.amount, 0),
       averageTransfer: transfers.length > 0 ? 
         transfers.reduce((sum, transfer) => sum + transfer.amount, 0) / transfers.length : 0,
       recentTransfers: transfers.slice(0, 5)

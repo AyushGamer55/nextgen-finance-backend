@@ -1,11 +1,11 @@
 const express = require('express');
 const { protect } = require('../middleware/authMiddleware');
-const { getMyAnalysis } = require('../controllers/analysisController');
+const { chatWithAdvisor } = require('../controllers/aiController');
 
 const router = express.Router();
 
 router.use(protect);
 
-router.get('/me', getMyAnalysis);
+router.post('/chat', chatWithAdvisor);
 
 module.exports = router;
